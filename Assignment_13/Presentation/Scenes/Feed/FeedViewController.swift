@@ -9,10 +9,14 @@ import UIKit
 
 class FeedViewController: UIViewController {
 
+    @IBOutlet var postsTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        postsTableView.delegate = self
+        postsTableView.dataSource = self
 
-        // Do any additional setup after loading the view.
+        postsTableView.register(UINib(nibName: "PostCell", bundle: nil), forCellReuseIdentifier: "PostCell")
     }
     
 
@@ -26,4 +30,22 @@ class FeedViewController: UIViewController {
     }
     */
 
+}
+
+extension FeedViewController: UITableViewDelegate{
+    
+}
+
+extension FeedViewController: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as! PostCell
+        cell.makePost(PostsSource[indexPath.row])
+        return cell
+    }
+    
+    
 }
