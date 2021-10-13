@@ -17,6 +17,7 @@
 		0D44471F2715DCC1000D96C4 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D44471D2715DCC1000D96C4 /* PostCell.xib */; };
 		0D4447222715E3BB000D96C4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4447212715E3BB000D96C4 /* Post.swift */; };
 		0D4447242715E40F000D96C4 /* PostsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4447232715E40F000D96C4 /* PostsSource.swift */; };
+		0D83F37327177FBB0045EF42 /* LikedPostsArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D83F37227177FBB0045EF42 /* LikedPostsArray.swift */; };
 		0DBB8B692714978200C7A8F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBB8B682714978200C7A8F4 /* AppDelegate.swift */; };
 		0DBB8B6B2714978200C7A8F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBB8B6A2714978200C7A8F4 /* SceneDelegate.swift */; };
 		0DBB8B702714978200C7A8F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DBB8B6E2714978200C7A8F4 /* Main.storyboard */; };
@@ -30,8 +31,8 @@
 		0DBB8B8F2714A3B300C7A8F4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBB8B8E2714A3B300C7A8F4 /* ProfileViewController.swift */; };
 		0DBB8B912714A3C600C7A8F4 /* FeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DBB8B902714A3C600C7A8F4 /* FeedViewController.storyboard */; };
 		0DBB8B932714A3DD00C7A8F4 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBB8B922714A3DD00C7A8F4 /* FeedViewController.swift */; };
-		0DBB8B952714A3EE00C7A8F4 /* SearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DBB8B942714A3EE00C7A8F4 /* SearchViewController.storyboard */; };
-		0DBB8B972714A3F900C7A8F4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBB8B962714A3F900C7A8F4 /* SearchViewController.swift */; };
+		0DBB8B952714A3EE00C7A8F4 /* LikedPostList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DBB8B942714A3EE00C7A8F4 /* LikedPostList.storyboard */; };
+		0DBB8B972714A3F900C7A8F4 /* LikedPostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBB8B962714A3F900C7A8F4 /* LikedPostList.swift */; };
 		0DBB8B992714A44A00C7A8F4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBB8B982714A44A00C7A8F4 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		0D44471D2715DCC1000D96C4 /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
 		0D4447212715E3BB000D96C4 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		0D4447232715E40F000D96C4 /* PostsSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsSource.swift; sourceTree = "<group>"; };
+		0D83F37227177FBB0045EF42 /* LikedPostsArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedPostsArray.swift; sourceTree = "<group>"; };
 		0DBB8B652714978200C7A8F4 /* Assignment_13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment_13.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DBB8B682714978200C7A8F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DBB8B6A2714978200C7A8F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,8 +63,8 @@
 		0DBB8B8E2714A3B300C7A8F4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		0DBB8B902714A3C600C7A8F4 /* FeedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedViewController.storyboard; sourceTree = "<group>"; };
 		0DBB8B922714A3DD00C7A8F4 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
-		0DBB8B942714A3EE00C7A8F4 /* SearchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchViewController.storyboard; sourceTree = "<group>"; };
-		0DBB8B962714A3F900C7A8F4 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		0DBB8B942714A3EE00C7A8F4 /* LikedPostList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LikedPostList.storyboard; sourceTree = "<group>"; };
+		0DBB8B962714A3F900C7A8F4 /* LikedPostList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedPostList.swift; sourceTree = "<group>"; };
 		0DBB8B982714A44A00C7A8F4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +121,7 @@
 			children = (
 				0D4447212715E3BB000D96C4 /* Post.swift */,
 				0D4447232715E40F000D96C4 /* PostsSource.swift */,
+				0D83F37227177FBB0045EF42 /* LikedPostsArray.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,7 +171,7 @@
 				0DBB8B822714A26300C7A8F4 /* Add */,
 				0DBB8B812714A25F00C7A8F4 /* Profile */,
 				0DBB8B802714A25700C7A8F4 /* Feed */,
-				0DBB8B7F2714A23000C7A8F4 /* Search */,
+				0DBB8B7F2714A23000C7A8F4 /* LikedPosts */,
 				0DBB8B7E2714A22B00C7A8F4 /* Main */,
 			);
 			path = Scenes;
@@ -183,13 +186,13 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		0DBB8B7F2714A23000C7A8F4 /* Search */ = {
+		0DBB8B7F2714A23000C7A8F4 /* LikedPosts */ = {
 			isa = PBXGroup;
 			children = (
-				0DBB8B942714A3EE00C7A8F4 /* SearchViewController.storyboard */,
-				0DBB8B962714A3F900C7A8F4 /* SearchViewController.swift */,
+				0DBB8B942714A3EE00C7A8F4 /* LikedPostList.storyboard */,
+				0DBB8B962714A3F900C7A8F4 /* LikedPostList.swift */,
 			);
-			path = Search;
+			path = LikedPosts;
 			sourceTree = "<group>";
 		};
 		0DBB8B802714A25700C7A8F4 /* Feed */ = {
@@ -293,7 +296,7 @@
 				0DBB8B912714A3C600C7A8F4 /* FeedViewController.storyboard in Resources */,
 				0DBB8B892714A38100C7A8F4 /* AddViewController.storyboard in Resources */,
 				0D066DF32714B3DD004B96C6 /* BreakfastCell.xib in Resources */,
-				0DBB8B952714A3EE00C7A8F4 /* SearchViewController.storyboard in Resources */,
+				0DBB8B952714A3EE00C7A8F4 /* LikedPostList.storyboard in Resources */,
 				0D066DEE2714A915004B96C6 /* RecipeOfDayTableViewCell.xib in Resources */,
 				0DBB8B8D2714A3A600C7A8F4 /* ProfileViewController.storyboard in Resources */,
 				0D44471F2715DCC1000D96C4 /* PostCell.xib in Resources */,
@@ -314,7 +317,8 @@
 				0DBB8B8F2714A3B300C7A8F4 /* ProfileViewController.swift in Sources */,
 				0D066DF72714B8BF004B96C6 /* BreakfastCollectionViewCell.swift in Sources */,
 				0DBB8B8B2714A38D00C7A8F4 /* AddViewController.swift in Sources */,
-				0DBB8B972714A3F900C7A8F4 /* SearchViewController.swift in Sources */,
+				0DBB8B972714A3F900C7A8F4 /* LikedPostList.swift in Sources */,
+				0D83F37327177FBB0045EF42 /* LikedPostsArray.swift in Sources */,
 				0D4447222715E3BB000D96C4 /* Post.swift in Sources */,
 				0DBB8B692714978200C7A8F4 /* AppDelegate.swift in Sources */,
 				0DBB8B6B2714978200C7A8F4 /* SceneDelegate.swift in Sources */,

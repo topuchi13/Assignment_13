@@ -31,7 +31,7 @@
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="j7C-RT-dem">
-                                <rect key="frame" x="0.0" y="114.5" width="414" height="698.5"/>
+                                <rect key="frame" x="0.0" y="118.5" width="414" height="694.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -44,7 +44,7 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="j7C-RT-dem" secondAttribute="trailing" id="NuW-0M-yDV"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="j7C-RT-dem" secondAttribute="bottom" id="OsS-ye-MGs"/>
                             <constraint firstItem="Q1f-Uh-EtE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="17" id="pg4-bO-Np2"/>
-                            <constraint firstItem="j7C-RT-dem" firstAttribute="top" secondItem="ac3-g1-nbM" secondAttribute="bottom" constant="1" id="tjT-p2-pff"/>
+                            <constraint firstItem="j7C-RT-dem" firstAttribute="top" secondItem="ac3-g1-nbM" secondAttribute="bottom" constant="5" id="tjT-p2-pff"/>
                             <constraint firstItem="ac3-g1-nbM" firstAttribute="leading" secondItem="Q1f-Uh-EtE" secondAttribute="leading" id="ut1-GS-dVN"/>
                         </constraints>
                     </view>
