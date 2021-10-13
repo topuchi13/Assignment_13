@@ -38,10 +38,10 @@
             </objects>
             <point key="canvasLocation" x="604" y="-85"/>
         </scene>
-        <!--SearchViewController-->
+        <!--LikedPostList-->
         <scene sceneID="zZ8-Na-sJE">
             <objects>
-                <viewControllerPlaceholder storyboardName="SearchViewController" referencedIdentifier="SearchViewController" id="20l-JZ-2AZ" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="LikedPostList" referencedIdentifier="LikedPostList" id="20l-JZ-2AZ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="gBB-hL-Mjf"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ub-qr-jum" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -23,13 +23,6 @@
                             <constraint firstAttribute="width" constant="32" id="bNQ-N8-SSA"/>
                         </constraints>
                     </imageView>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_heart" translatesAutoresizingMaskIntoConstraints="NO" id="tat-TQ-00e">
-                        <rect key="frame" x="312" y="27.5" width="26" height="23"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="23" id="XY0-SC-d1R"/>
-                            <constraint firstAttribute="width" constant="26" id="kDV-IG-tO5"/>
-                        </constraints>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eva Karlsson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mF2-aO-7yd">
                         <rect key="frame" x="78" y="26" width="116" height="26"/>
                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
@@ -49,18 +42,30 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zhh-BM-OCb">
+                        <rect key="frame" x="312" y="27.5" width="26" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="bpx-jE-LUS"/>
+                            <constraint firstAttribute="width" constant="26" id="yyD-wc-kHw"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="ic_heart"/>
+                        <connections>
+                            <action selector="likeButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="sNf-jg-Bd1"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="mF2-aO-7yd" firstAttribute="leading" secondItem="a1q-wV-JaT" secondAttribute="trailing" constant="14" id="6Xx-6v-Zch"/>
-                    <constraint firstItem="tat-TQ-00e" firstAttribute="centerY" secondItem="a1q-wV-JaT" secondAttribute="centerY" id="FWA-Tm-VI5"/>
-                    <constraint firstItem="88l-fI-1HI" firstAttribute="trailing" secondItem="tat-TQ-00e" secondAttribute="trailing" id="MHV-0G-hQU"/>
+                    <constraint firstItem="Zhh-BM-OCb" firstAttribute="centerY" secondItem="a1q-wV-JaT" secondAttribute="centerY" id="8ny-iL-6yG"/>
                     <constraint firstItem="OBb-wE-fCd" firstAttribute="top" secondItem="a1q-wV-JaT" secondAttribute="bottom" constant="15" id="MxY-ho-PqE"/>
                     <constraint firstItem="88l-fI-1HI" firstAttribute="top" secondItem="OBb-wE-fCd" secondAttribute="bottom" constant="14" id="a9d-Wu-60r"/>
+                    <constraint firstItem="88l-fI-1HI" firstAttribute="trailing" secondItem="Zhh-BM-OCb" secondAttribute="trailing" id="akD-qV-Wow"/>
                     <constraint firstItem="a1q-wV-JaT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="coe-OY-GMc"/>
                     <constraint firstItem="mF2-aO-7yd" firstAttribute="centerY" secondItem="a1q-wV-JaT" secondAttribute="centerY" id="d50-LS-A4w"/>
                     <constraint firstAttribute="trailing" secondItem="OBb-wE-fCd" secondAttribute="trailing" constant="16" id="f58-lu-I9v"/>
+                    <constraint firstAttribute="trailing" secondItem="Zhh-BM-OCb" secondAttribute="trailing" constant="36" id="gpo-Bm-27q"/>
                     <constraint firstItem="a1q-wV-JaT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="23" id="hYg-rq-GMT"/>
-                    <constraint firstAttribute="trailing" secondItem="tat-TQ-00e" secondAttribute="trailing" constant="36" id="i2A-bJ-VEx"/>
                     <constraint firstItem="OBb-wE-fCd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="lzw-nz-Kz5"/>
                     <constraint firstItem="88l-fI-1HI" firstAttribute="leading" secondItem="a1q-wV-JaT" secondAttribute="leading" id="sVW-k5-REb"/>
                     <constraint firstAttribute="bottomMargin" secondItem="88l-fI-1HI" secondAttribute="bottom" constant="14" id="wLw-Cy-fzS"/>
@@ -68,7 +73,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="heartIcon" destination="tat-TQ-00e" id="i9X-EW-hWS"/>
+                <outlet property="likeButton" destination="Zhh-BM-OCb" id="EFH-WI-Qmo"/>
                 <outlet property="postMainImage" destination="OBb-wE-fCd" id="ECA-cg-VhE"/>
                 <outlet property="postText" destination="88l-fI-1HI" id="Myo-Sc-Xqx"/>
                 <outlet property="userFullName" destination="mF2-aO-7yd" id="ipv-aO-mgT"/>

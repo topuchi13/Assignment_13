@@ -9,6 +9,7 @@ import Foundation
 
 
 struct Post{
+    var isLiked: Bool
     var fullName: String
     var userImage: String
     var postImage: String
