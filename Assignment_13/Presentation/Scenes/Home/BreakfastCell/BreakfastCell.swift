@@ -41,7 +41,6 @@ extension BreakfastCell: UICollectionViewDelegateFlowLayout{
         return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
     
-    
 }
 
 extension BreakfastCell: UICollectionViewDataSource{
@@ -50,26 +49,10 @@ extension BreakfastCell: UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        switch indexPath.row{
-        case 0:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BreakfastCollectionViewCell", for: indexPath) as! BreakfastCollectionViewCell
-            cell.initCel("img_breakfast2", "Brownie and cup of hot chocolate")
+            cell.makePost(indexPath.row)
             return cell
-        case 1:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BreakfastCollectionViewCell", for: indexPath) as! BreakfastCollectionViewCell
-            cell.initCel("img_waffles", "Waffles with honey and blueberries")
-            return cell
-        case 2:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BreakfastCollectionViewCell", for: indexPath) as! BreakfastCollectionViewCell
-            cell.initCel("img_breakfast", "Sandwich with smoked ham")
-            return cell
-        default:
-            break
-        }
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BreakfastCollectionViewCell", for: indexPath) as! BreakfastCollectionViewCell
-        
-        return cell
+            
     }
-    
     
 }

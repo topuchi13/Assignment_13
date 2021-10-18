@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class PostCell: UITableViewCell {
     
@@ -53,7 +54,7 @@ class PostCell: UITableViewCell {
             likeButton.setImage(UIImage.init(named: "ic_heart"), for: .normal)
         }
         userImgSmall.image = UIImage.init(named: post.userImage)
-        postMainImage.image = UIImage.init(named: post.postImage)
+        postMainImage.kf.setImage(with: URL(string: post.postImage))
         userFullName.text = post.fullName
         postText.text = post.postText
     }

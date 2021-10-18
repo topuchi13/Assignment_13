@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class BreakfastCollectionViewCell: UICollectionViewCell {
 
@@ -21,9 +22,10 @@ class BreakfastCollectionViewCell: UICollectionViewCell {
         
     }
     
-    func initCel (_ image: String, _ text: String) {
-        imageView.image = UIImage.init(named: image)
-        deliciousText.text = text
+    func makePost(_ postIndex: Int){
+        let post = PostsSource[postIndex]!
+        imageView.kf.setImage(with: URL(string: post.postImage))
+        deliciousText.text = post.postText
     }
 
 }

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class RecipeOfDayTableViewCell: UITableViewCell {
 
@@ -16,6 +17,7 @@ class RecipeOfDayTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        recipeOfDayImage.kf.setImage(with: URL(string: "https://bernard.ge/wp-content/uploads/2020/12/xinklukebi.jpg"))
         recipeOfDayImage.layer.cornerRadius = 23
     }
 
